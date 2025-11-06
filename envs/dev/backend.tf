@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket         = "aniket-state-bucket"
     key            = "dev/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "ap-south-1"
     dynamodb_table = "terraform-locks"
     encrypt        = true
   }
